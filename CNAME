@@ -1,1 +1,5 @@
 
+type: CNAME
+host: www.zeroninaru.com
+answer: zeroninaru.github.io
+TTL: 300
