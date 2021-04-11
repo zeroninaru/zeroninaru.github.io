@@ -1,9 +1,6 @@
 ---
 published: true
-layout: post
 title: 'মেরা পাত্থার'
-tags:
-  - atomic stories
 ---
 একবার আমি, মিশুক আর নাফিজ মিলে ইন্ডিয়া গেলাম ঘুরতে (২০১৩তে)। 
 
