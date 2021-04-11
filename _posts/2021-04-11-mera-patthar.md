@@ -1,7 +1,5 @@
 ---
 published: true
----
----
 layout: post
 title: 'মেরা পাত্থার'
 tags:
