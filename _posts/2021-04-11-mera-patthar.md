@@ -1,9 +1,9 @@
 ---
-published: false
+published: true
 ---
 ---
+layout: post
 title: 'মেরা পাত্থার'
-permalink: /posts/atomic-stories-1/
 tags:
   - atomic stories
 ---
