@@ -1,6 +1,6 @@
 ---
 published: true
-title: 'মেরা পাত্থার'
+title: 'লালি'
 ---
 
 লালি নেই।
