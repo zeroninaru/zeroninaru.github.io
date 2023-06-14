@@ -9,7 +9,8 @@ layout: default
     {{ content }}
   </div>
   
-  <p> {{ page.song_name }} <br />
+  <div class="song"> 
+    {{ page.song_name }} <br />
     <audio id="loop-limited" controls="controls" autoplay style="width: 20em;height:20px;">
     <source src="{{page.song_src}}" type="audio/ogg" />
     </audio><br />
@@ -17,11 +18,14 @@ layout: default
       var loopLimit = 1;
       var loopCounter = 0;
       document.getElementById('loop-limited').addEventListener('ended', function()
-                                                               {if (loopCounter < loopLimit)
-                                                               {this.currentTime = 0;this.play();loopCounter++;}}, 
+                                                               {this.volume=0.3;
+                                                                if (loopCounter < loopLimit)
+                                                               {this.currentTime = 0;
+                                                                this.play();
+                                                                loopCounter++;}}, 
                                                                false);
     </script>
-  </p>
+  </div>
 
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
