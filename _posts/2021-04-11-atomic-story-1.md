@@ -1,6 +1,9 @@
 ---
 published: true
 title: 'মেরা পাত্থার'
+song_name: Jane Woh Kaise (1957)
+song_src: ../songs/Jane-Woh-Kaise.mp3
+
 ---
 একবার আমি, মিশুক আর নাফিজ মিলে ইন্ডিয়া গেলাম ঘুরতে (২০১৩তে)। 
 
