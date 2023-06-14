@@ -11,18 +11,20 @@ layout: default
   
   <div class="song"> 
     {{ page.song_name }} <br />
-    <audio id="loop-limited" controls="controls" autoplay volume="0.35" style="width: 20em;height:20px;">
+    <audio id="loop-limited" controls="controls" autoplay style="width: 20em;height:20px;">
     <source src="{{page.song_src}}" type="audio/ogg" />
     </audio><br />
     <script>
       var loopLimit = 1;
       var loopCounter = 0;
-      document.getElementById('loop-limited').addEventListener('ended', function()
-                                                               {if (loopCounter < loopLimit)
-                                                               {this.currentTime = 0;
-                                                                this.play();
-                                                                loopCounter++;}}, 
-                                                               false);
+      let song = document.getElementById('loop-limited');
+      song.volume = 0.35;
+      song.addEventListener('ended', function()
+                                     {if (loopCounter < loopLimit)
+                                     {this.currentTime = 0;
+                                      this.play();
+                                      loopCounter++;}}, 
+                                     false);
     </script>
   </div>
 
