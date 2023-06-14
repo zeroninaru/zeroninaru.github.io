@@ -18,9 +18,9 @@ layout: default
       var loopLimit = 1;
       var loopCounter = 0;
       document.getElementById('loop-limited').addEventListener('ended', function()
-                                                               {this.volume=0.3;
-                                                                if (loopCounter < loopLimit)
+                                                               {if (loopCounter < loopLimit)
                                                                {this.currentTime = 0;
+                                                                this.volume = 0.3;
                                                                 this.play();
                                                                 loopCounter++;}}, 
                                                                false);
