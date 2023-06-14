@@ -11,7 +11,7 @@ layout: default
   
   <div class="song"> 
     {{ page.song_name }} <br />
-    <audio id="loop-limited" controls="controls" autoplay style="width: 20em;height:20px;">
+    <audio id="loop-limited" controls="controls" autoplay volume="0.35" style="width: 20em;height:20px;">
     <source src="{{page.song_src}}" type="audio/ogg" />
     </audio><br />
     <script>
@@ -20,7 +20,6 @@ layout: default
       document.getElementById('loop-limited').addEventListener('ended', function()
                                                                {if (loopCounter < loopLimit)
                                                                {this.currentTime = 0;
-                                                                this.volume = 0.3;
                                                                 this.play();
                                                                 loopCounter++;}}, 
                                                                false);
